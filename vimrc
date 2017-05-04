@@ -64,3 +64,5 @@ imap <F2> <ESC>:w<CR>i
 map <F7> :make<CR>
 " Use Ctrl-n in normal mode to toggle NERDTree
 nmap <C-n> :NERDTreeToggle<CR>
+" Save and exit in normal mode with Ctrl-c
+nmap <C-c> :wq<CR>

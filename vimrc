@@ -18,6 +18,8 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'Valloric/YouCompleteMe'
 " NERDTree
 Plugin 'scrooloose/nerdtree'
+" Auto-pairs (to complete {, (, [, etc.)
+Plugin 'jiangmiao/auto-pairs'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required

@@ -50,6 +50,9 @@ set ruler
 " Display line numbers on the left
 set number
 
+" Close VIM when only NERDTree is open
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+
 " Enhanced keyboard mappings:
 " in normal mode F2 will save the file
 nmap <F2> :w<CR>
@@ -57,3 +60,5 @@ nmap <F2> :w<CR>
 imap <F2> <ESC>:w<CR>i
 " build using makeprg with <F7>
 map <F7> :make<CR>
+" Use Ctrl-n in normal mode to toggle NERDTree
+nmap <C-n> :NERDTreeToggle<CR>

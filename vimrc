@@ -20,6 +20,8 @@ Plugin 'Valloric/YouCompleteMe'
 Plugin 'scrooloose/nerdtree'
 " Auto-pairs (to complete {, (, [, etc.)
 Plugin 'jiangmiao/auto-pairs'
+" Plugin to change btw .h and .c
+Plugin 'ericcurtin/CurtineIncSw.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -66,3 +68,5 @@ map <F7> :make<CR>
 nmap <C-n> :NERDTreeToggle<CR>
 " Save and exit in normal mode with Ctrl-c
 nmap <C-c> :wq<CR>
+" Change btw source and header by pressing <F1>
+map <F1> :call CurtineIncSw()<CR>

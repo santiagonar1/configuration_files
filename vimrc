@@ -58,6 +58,8 @@ set number
 
 " Show the status bar all the time
 set laststatus=2
+" Use powerline fonts with the status bar
+let g:airline_powerline_fonts = 1
 
 " Close VIM when only NERDTree is open
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif

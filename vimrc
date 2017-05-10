@@ -79,6 +79,9 @@ nmap <F2> :w<CR>
 imap <F2> <ESC>:w<CR>i
 " build using makeprg with <F7>
 map <F7> :make<CR>
+" Shortcut to eliminate all tabs and replace them with spaces, and also
+" trailing spaces
+nmap <F3> ggvG:retab<CR>:%s/\s\+$//e<CR>
 " Use Ctrl-n in normal mode to toggle NERDTree
 nmap <C-n> :NERDTreeToggle<CR>
 " Save and exit in normal mode with Ctrl-c

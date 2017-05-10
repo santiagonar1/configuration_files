@@ -70,6 +70,8 @@ let g:airline_theme='light'
 " Close VIM when only NERDTree is open
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
+" Change btw source and header by pressing <F1>
+map <F1> :call CurtineIncSw()<CR>
 " Enhanced keyboard mappings:
 " in normal mode F2 will save the file
 nmap <F2> :w<CR>
@@ -81,5 +83,3 @@ map <F7> :make<CR>
 nmap <C-n> :NERDTreeToggle<CR>
 " Save and exit in normal mode with Ctrl-c
 nmap <C-c> :wq<CR>
-" Change btw source and header by pressing <F1>
-map <F1> :call CurtineIncSw()<CR>

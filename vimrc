@@ -22,6 +22,8 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'jiangmiao/auto-pairs'
 " Plugin to change btw .h and .c
 Plugin 'ericcurtin/CurtineIncSw.vim'
+" Plugin to show a status bar
+Plugin 'vim-airline/vim-airline'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -53,6 +55,9 @@ set ruler
 
 " Display line numbers on the left
 set number
+
+" Show the status bar all the time
+set laststatus=2
 
 " Close VIM when only NERDTree is open
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif

@@ -24,6 +24,7 @@ Plugin 'jiangmiao/auto-pairs'
 Plugin 'ericcurtin/CurtineIncSw.vim'
 " Plugin to show a status bar
 Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -60,6 +61,8 @@ set number
 set laststatus=2
 " Use powerline fonts with the status bar
 let g:airline_powerline_fonts = 1
+" Define theme status bar
+let g:airline_theme='light'
 
 " Close VIM when only NERDTree is open
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif

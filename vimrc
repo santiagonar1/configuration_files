@@ -87,5 +87,6 @@ map <F7> :make<CR>
 nmap <F3> ggvG:retab<CR>:%s/\s\+$//e<CR>
 " Use Ctrl-n in normal mode to toggle NERDTree
 nmap <C-n> :NERDTreeToggle<CR>
-" Save and exit in normal mode with Ctrl-c
+" Save and exit with Ctrl-c
 nmap <C-c> :wq<CR>
+imap <C-c> <ESC>:wq<CR>

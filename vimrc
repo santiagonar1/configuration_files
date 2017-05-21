@@ -90,3 +90,8 @@ nmap <C-n> :NERDTreeToggle<CR>
 " Save and exit with Ctrl-c
 nmap <C-c> :wq<CR>
 imap <C-c> <ESC>:wq<CR>
+" Insert line at diferent point with <SPACE>+[h,j,k,l]
+nmap <SPACE>h I
+nmap <SPACE>l A
+nmap <SPACE>k O
+nmap <SPACE>j o

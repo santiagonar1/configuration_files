@@ -38,6 +38,9 @@ filetype plugin indent on    " required
 set exrc
 set secure
 
+" Highlight current line
+set cursorline
+
 " Identation and other stuff
 set tabstop=4
 set softtabstop=4

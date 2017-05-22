@@ -94,4 +94,6 @@ imap <C-c> <ESC>:wq<CR>
 nmap <SPACE>h I
 nmap <SPACE>l A
 nmap <SPACE>k O
+" Enter shell with <SPACE>+t
+nmap <SPACE>t :sh<CR>
 nmap <SPACE>j o

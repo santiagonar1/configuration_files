@@ -97,3 +97,8 @@ nmap <SPACE>k O
 " Enter shell with <SPACE>+t
 nmap <SPACE>t :sh<CR>
 nmap <SPACE>j o
+" Navigate between windows using <SPACE>+Arrows
+nmap <SPACE><Up> <C-w>k
+nmap <SPACE><Down> <C-w>j
+nmap <SPACE><Left> <C-w>h
+nmap <SPACE><Right> <C-w>l

@@ -94,9 +94,9 @@ imap <C-c> <ESC>:wq<CR>
 nmap <SPACE>h I
 nmap <SPACE>l A
 nmap <SPACE>k O
-" Enter shell with <SPACE>+t
-nmap <SPACE>t :sh<CR>
 nmap <SPACE>j o
+" Enter shell with <SPACE>+t
+nmap <SPACE>; :sh<CR>
 " Navigate between windows using <SPACE>+Arrows
 nmap <SPACE><Up> <C-w>k
 nmap <SPACE><Down> <C-w>j

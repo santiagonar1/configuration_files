@@ -78,8 +78,8 @@ map <F1> :call CurtineIncSw()<CR>
 " Enhanced keyboard mappings:
 " in normal mode F2 will save the file
 nmap <F2> :w<CR>
-" in insert mode F2 will exit insert, save, enters insert again
-imap <F2> <ESC>:w<CR>i
+" in insert mode F2 will exit insert, save and stay in normal mode
+imap <F2> <ESC>:w<CR>
 " build using makeprg with <F7>
 map <F7> :make<CR>
 " Shortcut to eliminate all tabs and replace them with spaces, and also

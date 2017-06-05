@@ -84,4 +84,7 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+# Alias to youtube-dl (to best audio, use --audio-quality 0)
+alias youtube="youtube-dl --extract-audio --audio-format mp3"
+
 source /etc/profile.d/vte.sh

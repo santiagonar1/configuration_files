@@ -86,5 +86,9 @@ source $ZSH/oh-my-zsh.sh
 
 # Alias to youtube-dl (to best audio, use --audio-quality 0)
 alias youtube="youtube-dl --extract-audio --audio-format mp3"
+alias gp="git pull"
+alias gc="git commit"
+alias ga="git add"
+alias gs="git status"
 
 source /etc/profile.d/vte.sh

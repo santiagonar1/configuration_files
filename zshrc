@@ -91,4 +91,7 @@ alias gc="git commit"
 alias ga="git add"
 alias gs="git status"
 
+# Use to solve some problems with tilix (a.k.a terminix). We might
+# have to create the symbolic link pointing to vte-x.xx.sh inside
+# /etc/profile.d 
 source /etc/profile.d/vte.sh

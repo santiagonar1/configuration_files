@@ -70,6 +70,9 @@ let g:airline_powerline_fonts = 1
 " Define theme status bar
 let g:airline_theme='light'
 
+" Disable preview
+set completeopt-=preview
+
 " Close VIM when only NERDTree is open
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 

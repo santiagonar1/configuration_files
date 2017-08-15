@@ -20,8 +20,6 @@ Plugin 'Valloric/YouCompleteMe'
 Plugin 'scrooloose/nerdtree'
 " Auto-pairs (to complete {, (, [, etc.)
 Plugin 'jiangmiao/auto-pairs'
-" Plugin to change btw .h and .c
-Plugin 'ericcurtin/CurtineIncSw.vim'
 " Plugin to show a status bar
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
@@ -76,8 +74,6 @@ set completeopt-=preview
 " Close VIM when only NERDTree is open
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
-" Change btw source and header by pressing <F1>
-map <F1> :call CurtineIncSw()<CR>
 " Enhanced keyboard mappings:
 " in normal mode F2 will save the file
 nmap <F2> :w<CR>

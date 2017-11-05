@@ -101,3 +101,5 @@ nmap <SPACE><Up> <C-w>k
 nmap <SPACE><Down> <C-w>j
 nmap <SPACE><Left> <C-w>h
 nmap <SPACE><Right> <C-w>l
+" Execute the q macro
+:nnoremap <Space>m @q

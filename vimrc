@@ -102,4 +102,6 @@ nmap <SPACE><Down> <C-w>j
 nmap <SPACE><Left> <C-w>h
 nmap <SPACE><Right> <C-w>l
 " Execute the q macro
-:nnoremap <Space>m @q
+nnoremap <Space>m @q
+" Activate/Deactivate relative line number
+nmap <SPACE>r :set relativenumber!<CR>

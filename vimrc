@@ -25,6 +25,10 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 " Plugin to manage Git
 Plugin 'tpope/vim-fugitive'
+" Plugin to use code snippets
+Plugin 'SirVer/ultisnips'
+" Snippets used by the former plugin
+Plugin 'honza/vim-snippets'
 
 
 " All of your Plugins must be added before the following line
@@ -68,6 +72,11 @@ let g:airline_powerline_fonts = 1
 " Define theme status bar
 let g:airline_theme='light'
 
+" Configuration UtilSnips
+let g:UltiSnipsExpandTrigger="<C-j>"
+let g:UltiSnipsJumpForwardTrigger="<TAB>"
+let g:UltiSnipsJumpBackwardTrigger="<C-k>"
+
 " Disable preview
 set completeopt-=preview
 
@@ -89,11 +98,11 @@ nmap <C-n> :NERDTreeToggle<CR>
 " Save and exit with Ctrl-c
 nmap <C-c> :wq<CR>
 imap <C-c> <ESC>:wq<CR>
-" Insert line at diferent point with <SPACE>+[h,j,k,l]
+" Insert line at diferent point with <SPACE>+[h,l]
 nmap <SPACE>h I
 nmap <SPACE>l A
-nmap <SPACE>k O
-nmap <SPACE>j o
+"nmap <SPACE>k O
+"nmap <SPACE>j o
 " Enter shell with <SPACE>+t
 nmap <SPACE>; :sh<CR>
 " Navigate between windows using <SPACE>+Arrows

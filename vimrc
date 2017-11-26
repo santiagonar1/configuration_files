@@ -74,7 +74,7 @@ let g:airline_theme='light'
 
 " Configuration UtilSnips
 let g:UltiSnipsExpandTrigger="<C-j>"
-let g:UltiSnipsJumpForwardTrigger="<TAB>"
+let g:UltiSnipsJumpForwardTrigger="<C-j>"
 let g:UltiSnipsJumpBackwardTrigger="<C-k>"
 
 " Disable preview

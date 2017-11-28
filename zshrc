@@ -86,10 +86,13 @@ source $ZSH/oh-my-zsh.sh
 
 # Alias to youtube-dl (to best audio, use --audio-quality 0)
 alias youtube="youtube-dl --extract-audio --audio-format mp3"
+# Alias git commands
 alias gp="git pull"
 alias gc="git commit"
 alias ga="git add"
 alias gs="git status"
+alias gl="git log"
+alias go="git checkout"
 
 # Use to solve some problems with tilix (a.k.a terminix). We might
 # have to create the symbolic link pointing to vte-x.xx.sh inside

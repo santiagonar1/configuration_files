@@ -78,7 +78,7 @@ let g:UltiSnipsJumpForwardTrigger="<C-j>"
 let g:UltiSnipsJumpBackwardTrigger="<C-k>"
 
 "Ignore files NerdTREE
-let NERDTreeIgnore = ['\.o$']
+let NERDTreeIgnore = ['\.o$', '\.pyc$']
 
 " Disable preview
 set completeopt-=preview

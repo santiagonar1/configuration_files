@@ -93,6 +93,7 @@ alias ga="git add"
 alias gs="git status"
 alias gl="git log"
 alias go="git checkout"
+alias gd="git diff"
 
 # Use to solve some problems with tilix (a.k.a terminix). We might
 # have to create the symbolic link pointing to vte-x.xx.sh inside

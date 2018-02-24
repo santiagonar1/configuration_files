@@ -99,7 +99,7 @@ alias gd="git diff"
 # Use to solve some problems with tilix (a.k.a terminix). We might
 # have to create the symbolic link pointing to vte-x.xx.sh inside
 # /etc/profile.d
-source /etc/profile.d/vte.sh
+# source /etc/profile.d/vte.sh
 
 # Env. variables
 export PETSC_DIR=/home/santiago/Documents/Maestria/3-Tercer-semestre/Turbulence/petsc-3.5.4

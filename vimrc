@@ -28,7 +28,7 @@ Plugin 'tpope/vim-fugitive'
 " Plugin to use code snippets
 Plugin 'SirVer/ultisnips'
 " Snippets used by the former plugin
-Plugin 'honza/vim-snippets'
+" Plugin 'honza/vim-snippets'
 
 
 " All of your Plugins must be added before the following line

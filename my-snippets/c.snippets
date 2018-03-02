@@ -17,3 +17,28 @@ int main(int argc, const char *argv[])
 	return 0;
 }
 endsnippet
+
+## Control Statements
+# if
+snippet if "if"
+if (${1:true}) {
+		${0:${VISUAL}}
+}
+endsnippet
+
+snippet ife "if + else"
+if (${1:true}) {
+		${2:${VISUAL}}
+
+} else {
+		${0}
+
+}
+endsnippet
+
+# else if
+snippet elif "else if"
+else if (${1:true}) {
+		${0:${VISUAL}}
+}
+endsnippet

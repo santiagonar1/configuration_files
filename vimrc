@@ -76,6 +76,8 @@ let g:airline_theme='light'
 let g:UltiSnipsExpandTrigger="<C-j>"
 let g:UltiSnipsJumpForwardTrigger="<C-j>"
 let g:UltiSnipsJumpBackwardTrigger="<C-k>"
+" Set snippets directory
+let g:UltiSnipsSnippetDirectories=$HOME.'/.vim/UltiSnips'
 
 "Ignore files NerdTREE
 let NERDTreeIgnore = ['\.o$', '\.pyc$']

@@ -1,3 +1,14 @@
+# Start c file
+snippet c_start "inc + main(int, const char)"
+#include <${1:stdio}.h>
+
+int main(int argc, const char *argv[])
+{
+	${0}
+	return 0;
+}
+endsnippet
+
 # Main
 snippet main "main(int, const char)"
 int main(int argc, const char *argv[])

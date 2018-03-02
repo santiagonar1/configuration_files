@@ -77,7 +77,8 @@ let g:UltiSnipsExpandTrigger="<C-j>"
 let g:UltiSnipsJumpForwardTrigger="<C-j>"
 let g:UltiSnipsJumpBackwardTrigger="<C-k>"
 " Set snippets directory
-let g:UltiSnipsSnippetDirectories=$HOME.'/.vim/UltiSnips'
+set runtimepath+=~/.vim
+let g:UltiSnipsSnippetDirectories=["my-snippets"]
 
 "Ignore files NerdTREE
 let NERDTreeIgnore = ['\.o$', '\.pyc$']

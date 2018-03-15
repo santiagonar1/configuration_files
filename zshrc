@@ -103,6 +103,3 @@ alias gd="git diff"
 
 # Env. variables
 export PETSC_DIR=/home/santiago/Documents/Maestria/3-Tercer-semestre/Turbulence/petsc-3.5.4
-
-# Start tmux
-tmux

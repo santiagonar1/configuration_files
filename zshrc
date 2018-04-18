@@ -102,4 +102,6 @@ alias gd="git diff"
 # source /etc/profile.d/vte.sh
 
 # Env. variables
-export PETSC_DIR=/home/santiago/Documents/Maestria/3-Tercer-semestre/Turbulence/petsc-3.5.4
+# export PETSC_DIR=/home/santiago/Documents/Maestria/3-Tercer-semestre/Turbulence/petsc-3.5.4
+export NFSPATH=$HOME/nfs
+export IMPIPATH=$NFSPATH/install

@@ -29,12 +29,17 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'SirVer/ultisnips'
 " Snippets used by the former plugin
 " Plugin 'honza/vim-snippets'
+" Plugin for searching patterns inside project
+Plugin 'mileszs/ack.vim'
 
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
 " End Vundle configuration
+
+" Configuration to use ag the silver searcher with ack
+let g:ackprg = 'ag --nogroup --nocolor --column'
 
 " Allows .vimrc for each project. Since this can be dangerous, we have to set secure
 set exrc

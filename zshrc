@@ -96,6 +96,9 @@ alias gl="git log"
 alias go="git checkout"
 alias gd="git diff"
 
+# Use VIM mode
+bindkey -v
+
 # Use to solve some problems with tilix (a.k.a terminix). We might
 # have to create the symbolic link pointing to vte-x.xx.sh inside
 # /etc/profile.d

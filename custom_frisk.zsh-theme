@@ -1,3 +1,5 @@
+MODE_INDICATOR="%{$fg_bold[red]%}[NORMAL]%{$reset_color%}"
+
 PROMPT=$'
 %{$fg[red]%}%~%{$reset_color%}  $(git_prompt_info)%{$fg[black]%}[%T]%{$reset_color%}
 %{$fg_bold[black]%}>%{$reset_color%} '

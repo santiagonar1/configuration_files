@@ -95,6 +95,9 @@ let NERDTreeIgnore = ['\.o$', '\.pyc$']
 " Disable preview
 set completeopt-=preview
 
+" Show all search coincidence (disable with F6, see below)
+set hlsearch
+
 " Close VIM when only NERDTree is open
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
@@ -108,6 +111,8 @@ map <F7> :make<CR>
 " Shortcut to eliminate all tabs and replace them with spaces, and also
 " trailing spaces
 nmap <F3> ggvG:retab<CR>:%s/\s\+$//e<CR>
+" Disable search highlight with F6
+nmap <F6> :nohlsearch<CR>
 " Use Ctrl-n in normal mode to toggle NERDTree
 nmap <C-n> :NERDTreeToggle<CR>
 " Save and exit with Ctrl-c

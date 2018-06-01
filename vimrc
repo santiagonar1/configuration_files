@@ -85,6 +85,10 @@ let g:UltiSnipsJumpBackwardTrigger="<C-k>"
 set runtimepath+=~/.vim
 let g:UltiSnipsSnippetDirectories=["my-snippets"]
 
+" Show tabs
+set list
+set listchars=tab:>-
+
 "Ignore files NerdTREE
 let NERDTreeIgnore = ['\.o$', '\.pyc$']
 

@@ -106,13 +106,13 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 nmap <F2> :w<CR>
 " in insert mode F2 will exit insert, save and stay in normal mode
 imap <F2> <ESC>:w<CR>
-" build using makeprg with <F7>
-map <F7> :make<CR>
 " Shortcut to eliminate all tabs and replace them with spaces, and also
 " trailing spaces
 nmap <F3> ggvG:retab<CR>:%s/\s\+$//e<CR>
 " Disable search highlight with F6
 nmap <F6> :nohlsearch<CR>
+" Build using makeprg with <F7>
+map <F7> :make<CR>
 " Use Ctrl-n in normal mode to toggle NERDTree
 nmap <C-n> :NERDTreeToggle<CR>
 " Save and exit with Ctrl-c

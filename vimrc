@@ -31,6 +31,12 @@ Plugin 'SirVer/ultisnips'
 " Plugin 'honza/vim-snippets'
 " Plugin for searching patterns inside project
 Plugin 'mileszs/ack.vim'
+" Plugin to generate c-tags
+Plugin 'xolox/vim-easytags'
+" Plugin required for easytags
+Plugin 'xolox/vim-misc'
+" Plugin to show tags (functions) on panel
+Plugin 'majutsushi/tagbar'
 
 
 " All of your Plugins must be added before the following line
@@ -113,6 +119,8 @@ nmap <F3> ggvG:retab<CR>:%s/\s\+$//e<CR>
 nmap <F6> :nohlsearch<CR>
 " Build using makeprg with <F7>
 map <F7> :make<CR>
+"Use Ctr-t in normal mode to toggle Tagbar
+nmap <C-t> :TagbarToggle<CR>
 " Use Ctrl-n in normal mode to toggle NERDTree
 nmap <C-n> :NERDTreeToggle<CR>
 " Save and exit with Ctrl-c

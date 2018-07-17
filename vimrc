@@ -119,6 +119,8 @@ nmap <F3> ggvG:retab<CR>:%s/\s\+$//e<CR>
 nmap <F6> :nohlsearch<CR>
 " Build using makeprg with <F7>
 map <F7> :make<CR>
+" Toggle paste mode with F8
+set pastetoggle=<F8>
 "Use Ctr-t in normal mode to toggle Tagbar
 nmap <C-t> :TagbarToggle<CR>
 " Use Ctrl-n in normal mode to toggle NERDTree

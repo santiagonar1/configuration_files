@@ -111,3 +111,5 @@ bindkey -v
 # export PETSC_DIR=/home/santiago/Documents/Maestria/3-Tercer-semestre/Turbulence/petsc-3.5.4
 export NFSPATH=$HOME/nfs
 export IMPIPATH=$NFSPATH/install
+export LIKWID_LIB=/usr/local/lib
+export LIKWID_INCLUDE=/usr/local/include 

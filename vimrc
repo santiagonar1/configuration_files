@@ -73,8 +73,8 @@ filetype indent plugin on
 " line of a window
 set ruler
 
-" Display line numbers on the left
-set number
+" Display relative line numbers on the left
+set relativenumber
 
 " Show the status bar all the time
 set laststatus=2

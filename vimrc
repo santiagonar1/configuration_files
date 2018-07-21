@@ -74,6 +74,7 @@ filetype indent plugin on
 set ruler
 
 " Display relative line numbers on the left
+set number
 set relativenumber
 
 " Show the status bar all the time

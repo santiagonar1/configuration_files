@@ -87,6 +87,10 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+###########################################
+#                SETTINGS                 #
+###########################################
+
 # Alias to youtube-dl (to best audio, use --audio-quality 0)
 alias youtube="youtube-dl --extract-audio --audio-format mp3"
 # Alias git commands
@@ -98,6 +102,13 @@ alias gs="git status"
 alias gl="git log"
 alias go="git checkout"
 alias gd="git diff"
+# Move commands
+alias cdg="cd $HOME/git"
+alias cdd="cd $HOME/Downloads"
+alias cdm="cd $HOME/Documents/Maestria"
+alias cdt="cd $HOME/Documents/Maestria/Thesis"
+alias cdp="cd $HOME/git/power_measurements"
+alias cdc="cd $HOME/git/configuration_files"
 
 # Use VIM mode
 bindkey -v
@@ -112,4 +123,4 @@ bindkey -v
 export NFSPATH=$HOME/nfs
 export IMPIPATH=$NFSPATH/install
 export LIKWID_LIB=/usr/local/lib
-export LIKWID_INCLUDE=/usr/local/include 
+export LIKWID_INCLUDE=/usr/local/include

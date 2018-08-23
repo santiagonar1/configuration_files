@@ -109,6 +109,7 @@ alias cdm="cd $HOME/Documents/Maestria"
 alias cdt="cd $HOME/Documents/Maestria/Thesis"
 alias cdp="cd $HOME/git/power_measurements"
 alias cdc="cd $HOME/git/configuration_files"
+alias cdgc="cd $HOME/git/compiler"
 
 # Use VIM mode
 bindkey -v

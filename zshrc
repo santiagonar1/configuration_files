@@ -110,6 +110,8 @@ alias cdt="cd $HOME/Documents/Maestria/Thesis"
 alias cdp="cd $HOME/git/power_measurements"
 alias cdc="cd $HOME/git/configuration_files"
 alias cdgc="cd $HOME/git/compiler"
+# Cluster MPI
+alias cluster="/home/santiago/git/hiwi_scripts/vmc-old/irm4"
 
 # Use VIM mode
 bindkey -v

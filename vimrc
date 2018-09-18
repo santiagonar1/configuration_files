@@ -37,6 +37,8 @@ Plugin 'xolox/vim-easytags'
 Plugin 'xolox/vim-misc'
 " Plugin to show tags (functions) on panel
 Plugin 'majutsushi/tagbar'
+" Plugin to open files last edit position
+Plugin 'farmergreg/vim-lastplace'
 
 
 " All of your Plugins must be added before the following line

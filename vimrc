@@ -39,6 +39,8 @@ Plugin 'xolox/vim-misc'
 Plugin 'majutsushi/tagbar'
 " Plugin to open files last edit position
 Plugin 'farmergreg/vim-lastplace'
+" Plugin to add comments
+Plugin 'tpope/vim-commentary'
 
 
 " All of your Plugins must be added before the following line
@@ -48,6 +50,10 @@ filetype plugin indent on    " required
 
 " Configuration to use ag the silver searcher with ack
 let g:ackprg = 'ag --nogroup --nocolor --column'
+
+" Configuration to use different type of comments for c, cpp files
+autocmd FileType c setlocal commentstring=//\ %s
+autocmd FileType cpp setlocal commentstring=//\ %s
 
 " Allows .vimrc for each project. Since this can be dangerous, we have to set secure
 set exrc
@@ -149,3 +155,6 @@ nnoremap <Space>m @q
 nmap <SPACE>r :set relativenumber!<CR>
 " Add shortcut to search a word
 nmap <SPACE>s "zyiw:Ack!<Space><C-r>z
+" Toggle comments with <SPACE>c
+nmap <SPACE>c :Commentary<CR> 
+vmap <SPACE>c :Commentary<CR> 

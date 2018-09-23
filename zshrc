@@ -96,6 +96,8 @@ function cd {
         builtin cd "$@" && ls
 }
 
+# Connect to lxhalle
+alias gotum="ssh narvaez@lxhalle.informatik.tu-muenchen.de"
 # Alias to youtube-dl (to best audio, use --audio-quality 0)
 alias youtube="youtube-dl --extract-audio --audio-format mp3"
 # Alias git commands

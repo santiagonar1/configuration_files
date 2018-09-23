@@ -91,6 +91,11 @@ source $ZSH/oh-my-zsh.sh
 #                SETTINGS                 #
 ###########################################
 
+# Do an ls after cp
+function cd {
+        builtin cd "$@" && ls
+}
+
 # Alias to youtube-dl (to best audio, use --audio-quality 0)
 alias youtube="youtube-dl --extract-audio --audio-format mp3"
 # Alias git commands

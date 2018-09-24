@@ -96,6 +96,12 @@ function cd {
         builtin cd "$@" && ls
 }
 
+# Compress file
+function comp {
+    echo "Trying to compress $1"
+    tar -czvf "$1".tar.gz "$1"
+}
+
 # Connect to lxhalle
 alias gotum="ssh narvaez@lxhalle.informatik.tu-muenchen.de"
 # Alias to youtube-dl (to best audio, use --audio-quality 0)

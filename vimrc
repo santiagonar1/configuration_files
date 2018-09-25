@@ -142,7 +142,7 @@ nmap <SPACE>h I
 nmap <SPACE>l A
 "nmap <SPACE>k O
 "nmap <SPACE>j o
-" Enter shell with <SPACE>+t
+" Enter shell
 nmap <SPACE>; :sh<CR>
 " Navigate between windows using <SPACE>+Arrows
 nmap <SPACE><Up> <C-w>k

@@ -156,7 +156,7 @@ nmap <SPACE>n :set relativenumber!<CR>
 " Add shortcut to search a word
 nmap <SPACE>s "zyiw:Ack!<Space><C-r>z
 " Toggle comments with <SPACE>c
-nmap <SPACE>c :Commentary<CR> 
-vmap <SPACE>c :Commentary<CR> 
+nmap <SPACE>c :Commentary<CR>
+vmap <SPACE>c :Commentary<CR>
 " Search and replace
-nmap <SPACE>f "zyiw:%s/<C-r>z//gc<LEFT><LEFT><LEFT>
+nmap <SPACE>r "zyiw:%s/<C-r>z//gc<LEFT><LEFT><LEFT>

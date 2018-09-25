@@ -152,7 +152,7 @@ nmap <SPACE><Right> <C-w>l
 " Execute the q macro
 nnoremap <Space>m @q
 " Activate/Deactivate relative line number
-nmap <SPACE>r :set relativenumber!<CR>
+nmap <SPACE>n :set relativenumber!<CR>
 " Add shortcut to search a word
 nmap <SPACE>s "zyiw:Ack!<Space><C-r>z
 " Toggle comments with <SPACE>c

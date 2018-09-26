@@ -6,7 +6,7 @@ PROMPT=$'
 %{$fg_bold[black]%}>%{$reset_color%} '
 else
 PROMPT=$'
-%{$fg[red]%}%~%{$reset_color%}  $(git_prompt_info)%{$fg[black]%}[%T]%{$reset_color%} %{$fg_bold[blue]%}[vim] 
+%{$fg[red]%}%~%{$reset_color%} $(git_prompt_info)%{$fg_bold[blue]%}[vim] %{$reset_color%}%{$fg[black]%}[%T]%{$reset_color%}
 %{$fg_bold[black]%}>%{$reset_color%} '
 fi
 

@@ -1,8 +1,14 @@
 MODE_INDICATOR="%{$fg_bold[red]%}[NORMAL]%{$reset_color%}"
 
+if [[ -z "${VIMRUNTIME}"  ]]; then
 PROMPT=$'
 %{$fg[red]%}%~%{$reset_color%}  $(git_prompt_info)%{$fg[black]%}[%T]%{$reset_color%}
 %{$fg_bold[black]%}>%{$reset_color%} '
+else
+PROMPT=$'
+%{$fg[red]%}%~%{$reset_color%}  $(git_prompt_info)%{$fg[black]%}[%T]%{$reset_color%} %{$fg_bold[blue]%}[vim] 
+%{$fg_bold[black]%}>%{$reset_color%} '
+fi
 
 PROMPT2="%{$fg_bold[white]%}%_> %{$reset_color%}"
 

@@ -137,3 +137,4 @@ bindkey -v
 # Env. variables
 export LIKWID_LIB=/usr/local/lib
 export LIKWID_INCLUDE=/usr/local/include
+export PYTHONPATH=/home/santiago/git/power_measurements/scripts/C:$PYTHONPATH

@@ -104,8 +104,10 @@ let g:UltiSnipsSnippetDirectories=["my-snippets"]
 set list
 set listchars=tab:>-
 
-"Ignore files NerdTREE
+" Ignore files NerdTREE
 let NERDTreeIgnore = ['\.o$', '\.pyc$']
+" Split on the right by defaul when pressing s
+set splitright
 
 " Disable preview
 set completeopt-=preview

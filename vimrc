@@ -139,18 +139,18 @@ nmap <C-n> :NERDTreeToggle<CR>
 " Save and exit with Ctrl-c
 nmap <C-c> :wq<CR>
 imap <C-c> <ESC>:wq<CR>
-" Insert line at diferent point with <SPACE>+[h,l]
-nmap <SPACE>h I
-nmap <SPACE>l A
+" Insert line at diferent point with <SPACE>+Arrows
+nmap <SPACE><LEFT> I
+nmap <SPACE><RIGHT> A
 "nmap <SPACE>k O
 "nmap <SPACE>j o
 " Enter shell
 nmap <SPACE>; :sh<CR>
 " Navigate between windows using <SPACE>+Arrows
-nmap <SPACE><Up> <C-w>k
-nmap <SPACE><Down> <C-w>j
-nmap <SPACE><Left> <C-w>h
-nmap <SPACE><Right> <C-w>l
+nmap <SPACE>k <C-w>k
+nmap <SPACE>j <C-w>j
+nmap <SPACE>h <C-w>h
+nmap <SPACE>l <C-w>l
 " Execute the q macro
 nnoremap <Space>m @q
 " Activate/Deactivate relative line number

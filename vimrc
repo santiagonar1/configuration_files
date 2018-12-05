@@ -118,6 +118,12 @@ set hlsearch
 " Close VIM when only NERDTree is open
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
+" Copy to system clipboard by default. You need to have clipboard feature flag
+" enable to this to work. To check it, just execute vim --version and look for
+" clipboard. If we have + is fine, if we have - we will need to install
+" something extra. In the case of ubuntu, just install vim-gnome
+set clipboard=unnamedplus
+
 " Enhanced keyboard mappings:
 " in normal mode F2 will save the file
 nmap <F2> :w<CR>

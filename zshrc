@@ -102,6 +102,12 @@ function comp {
     tar -czvf "$1".tar.gz "$1"
 }
 
+# Autostart tmux with every terminal
+if command -v tmux &> /dev/null && [ -n "$PS1"  ] && [[ ! "$TERM" =~ screen  ]]\
+   && [[ ! "$TERM" =~ tmux  ]] && [ -z "$TMUX"  ]; then
+    exec tmux
+fi
+
 # Connect to lxhalle
 alias gotum="ssh narvaez@lxhalle.informatik.tu-muenchen.de"
 # Alias to youtube-dl (to best audio, use --audio-quality 0)

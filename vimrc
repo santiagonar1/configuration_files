@@ -55,6 +55,9 @@ let g:ackprg = 'ag --nogroup --nocolor --column'
 autocmd FileType c setlocal commentstring=//\ %s
 autocmd FileType cpp setlocal commentstring=//\ %s
 
+" Turn spelling on for markdown files
+autocmd FileType markdown set spell
+
 " Allows .vimrc for each project. Since this can be dangerous, we have to set secure
 set exrc
 set secure

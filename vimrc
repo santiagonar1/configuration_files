@@ -166,6 +166,8 @@ nnoremap <Space>m @q
 nmap <SPACE>n :set relativenumber!<CR>
 " Add shortcut to search a word
 nmap <SPACE>s "zyiw:Ack!<Space><C-r>z
+" Add shortcut to go to definition in new window
+nmap <SPACE>d "zyiw:stag<Space><C-r>z<CR>
 " Toggle comments with <SPACE>c
 nmap <SPACE>c :Commentary<CR>
 vmap <SPACE>c :Commentary<CR>

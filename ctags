@@ -1,0 +1,11 @@
+--recurse=yes
+--exclude=.git
+--exclude=vendor/*
+--exclude=node_modules/*
+--exclude=db/*
+--exclude=log/*
+--exclude=\*.swp
+--exclude=\*.pyc
+--exclude=tags
+--exclude=\*.tar.\*
+--exclude=.tmp

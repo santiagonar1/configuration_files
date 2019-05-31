@@ -174,5 +174,3 @@ nmap <SPACE>r "zyiw:%s/<C-r>z//gc<LEFT><LEFT><LEFT>
 " Insert/remove level indentation
 nmap <SPACE><SPACE> I<TAB><ESC>l
 nmap <SPACE><BS> I<BS><ESC>l
-" Go to definition using ctags
-nmap gd "zyiw:tag<Space><C-r>z<CR>

@@ -103,6 +103,9 @@ let g:UltiSnipsJumpBackwardTrigger="<C-k>"
 set runtimepath+=~/.vim
 let g:UltiSnipsSnippetDirectories=["my-snippets"]
 
+" Update easytags async
+let g:easytags_async = 1
+
 " Show tabs
 set list
 set listchars=tab:>-

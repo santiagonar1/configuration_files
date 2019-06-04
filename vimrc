@@ -43,6 +43,8 @@ Plugin 'farmergreg/vim-lastplace'
 Plugin 'tpope/vim-commentary'
 " Plugin to zoom with <C-w>m
 Plugin 'dhruvasagar/vim-zoom'
+" Plugin to save vim sessions more easily
+Plugin 'xolox/vim-session'
 
 
 " All of your Plugins must be added before the following line
@@ -122,6 +124,9 @@ set completeopt-=preview
 
 " Show all search coincidence (disable with F6, see below)
 set hlsearch
+
+" Disable autosave session
+let g:session_autosave = 'no'
 
 " Close VIM when only NERDTree is open
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif

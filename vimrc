@@ -41,6 +41,8 @@ Plugin 'majutsushi/tagbar'
 Plugin 'farmergreg/vim-lastplace'
 " Plugin to add comments
 Plugin 'tpope/vim-commentary'
+" Plugin to zoom with <C-w>m
+Plugin 'dhruvasagar/vim-zoom'
 
 
 " All of your Plugins must be added before the following line

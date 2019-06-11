@@ -94,6 +94,9 @@ source $ZSH/oh-my-zsh.sh
 # Export HOSTNAME variable (compatibility with bash)
 export HOSTNAME=$(hostname)
 
+# Use some work functions
+source $HOME/.bash_functions_work
+
 # Do an ls after cp
 function cd {
         builtin cd "$@" && ls

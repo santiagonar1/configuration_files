@@ -147,7 +147,7 @@ nmap <F2> :w<CR>
 imap <F2> <ESC>:w<CR>
 " Shortcut to eliminate all tabs and replace them with spaces, and also
 " trailing spaces
-nmap <F3> ggvG:retab<CR>:%s/\s\+$//e<CR>
+nmap <F3> ggvG:retab<CR>:%s/\s\+$//e<CR>:nohlsearch<CR>
 " Disable search highlight with F6
 nmap <F6> :nohlsearch<CR>
 " Build using makeprg with <F7>

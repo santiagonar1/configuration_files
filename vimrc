@@ -61,6 +61,7 @@ autocmd FileType cpp setlocal commentstring=//\ %s
 
 " Turn spelling on for markdown files
 autocmd FileType markdown set spell
+autocmd FileType tex set spell
 
 " Allows .vimrc for each project. Since this can be dangerous, we have to set secure
 set exrc

@@ -83,3 +83,29 @@ endsnippet
 snippet prtv "printf + value"
 printf("${1} %${0:d}\n", ${2:i});
 endsnippet
+
+
+## MPI
+snippet mpisize "MPI_Comm_size"
+MPI_Comm_size(${1:MPI_COMM_WORLD}, &${2:num_proc});
+endsnippet
+
+snippet mpirank "MPI_Comm_rank"
+MPI_Comm_size(${1:MPI_COMM_WORLD}, &${2:rank});
+endsnippet
+
+snippet mpibarrier "MPI_Barrier"
+MPI_Barrier(${1:MPI_COMM_WORLD});
+endsnippet
+
+snippet mpisend "MPI_Send"
+MPI_Send(${1:data}, ${2:count}, ${3:type}, ${4:dest}, ${5:tag}, ${6:MPI_COMM_WORLD});
+endsnippet
+
+snippet mpirecv "MPI_Recv"
+MPI_Recv(${1:data}, ${2:count}, ${3:type}, ${4:source}, ${5:tag}, ${6:MPI_COMM_WORLD}, ${7:status});
+endsnippet
+
+snippet mpibcast "MPI_Bcast"
+MPI_Bcast( ${1:data}, ${2:count}, ${3:type}, ${4:root}, ${5:MPI_COMM_WORLD});
+endsnippet

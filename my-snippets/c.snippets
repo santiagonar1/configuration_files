@@ -109,3 +109,15 @@ endsnippet
 snippet mpibcast "MPI_Bcast"
 MPI_Bcast( ${1:data}, ${2:count}, ${3:type}, ${4:root}, ${5:MPI_COMM_WORLD});
 endsnippet
+
+snippet mpireduce "MPI_Reduce"
+MPI_Reduce( ${1:s_data}, ${2:r_data}, ${3:count}, ${4:type}, ${5:op}, ${6:root}, ${7:MPI_COMM_WORLD});
+endsnippet
+
+snippet mpiscatter "MPI_Scatter"
+MPI_Scatter( ${1:s_data}, ${2:s_count}, ${3:s_type}, ${4:r_data}, ${5:r_count}, ${6:r_type}, ${7:root}, ${8:MPI_COMM_WORLD});
+endsnippet
+
+snippet mpigather "MPI_Gather"
+MPI_Gather( ${1:s_data}, ${2:s_count}, ${3:s_type}, ${4:r_data}, ${5:r_count}, ${6:r_type}, ${7:root}, ${8:MPI_COMM_WORLD});
+endsnippet

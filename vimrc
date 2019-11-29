@@ -61,6 +61,7 @@ autocmd FileType cpp setlocal commentstring=//\ %s
 
 " Turn spelling on for markdown files
 autocmd FileType markdown set spell
+autocmd FileType tex set spell
 
 " Allows .vimrc for each project. Since this can be dangerous, we have to set secure
 set exrc
@@ -146,7 +147,7 @@ nmap <F2> :w<CR>
 imap <F2> <ESC>:w<CR>
 " Shortcut to eliminate all tabs and replace them with spaces, and also
 " trailing spaces
-nmap <F3> ggvG:retab<CR>:%s/\s\+$//e<CR>
+nmap <F3> ggvG:retab<CR>:%s/\s\+$//e<CR>:nohlsearch<CR>
 " Disable search highlight with F6
 nmap <F6> :nohlsearch<CR>
 " Build using makeprg with <F7>
@@ -188,3 +189,6 @@ nmap <SPACE>r "zyiw:%s/<C-r>z//gc<LEFT><LEFT><LEFT>
 " Insert/remove level indentation
 nmap <SPACE><SPACE> I<TAB><ESC>l
 nmap <SPACE><BS> I<BS><ESC>l
+" Zoom in/out
+noremap Zz <c-w>_ \| <c-w>\|
+noremap Zo <c-w>=

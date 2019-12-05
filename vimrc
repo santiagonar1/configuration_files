@@ -185,7 +185,7 @@ nmap <SPACE>d "zyiw:stag<Space><C-r>z<CR>
 nmap <SPACE>c :Commentary<CR>
 vmap <SPACE>c :Commentary<CR>
 " Search and replace
-nmap <SPACE>r "zyiw:%s/<C-r>z//gc<LEFT><LEFT><LEFT>
+nmap <SPACE>r "zyiw:%s/\<<C-r>z\>//gc<LEFT><LEFT><LEFT>
 " Insert/remove level indentation
 nmap <SPACE><SPACE> I<TAB><ESC>l
 nmap <SPACE><BS> I<BS><ESC>l

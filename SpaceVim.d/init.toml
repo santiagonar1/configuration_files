@@ -68,6 +68,10 @@ name = "core#statusline"
 name = "incsearch"
 
 [[layers]]
+name = "gtags"
+gtagslabel = "pygments"
+
+[[layers]]
 name = "lang#c"
 enable_clang_syntax_highlight = true
 

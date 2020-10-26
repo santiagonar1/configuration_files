@@ -70,3 +70,7 @@ name = "incsearch"
 [[layers]]
 name = "lang#c"
 enable_clang_syntax_highlight = true
+
+[[layers]]
+name = "lang#latex"
+

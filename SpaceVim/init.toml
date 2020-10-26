@@ -53,10 +53,6 @@ name = "shell"
 default_position = "bottom"
 
 [[layers]]
-name = "lang#c"
-enable_clang_syntax_highlight = true
-
-[[layers]]
 name = "colorscheme"
 
 [[layers]]
@@ -71,3 +67,6 @@ name = "core#statusline"
 [[layers]]
 name = "incsearch"
 
+[[layers]]
+name = "lang#c"
+enable_clang_syntax_highlight = true

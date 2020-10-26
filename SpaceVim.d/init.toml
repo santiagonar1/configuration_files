@@ -40,6 +40,8 @@
 
     disabled_plugins = ["neomake"]
 
+    bootstrap_before = "myspacevim#before"
+
 
 # Enable autocomplete layer
 [[layers]]
@@ -47,10 +49,6 @@ name = "autocomplete"
 autocomplete_method = "ycm"
 auto_completion_return_key_behavior = "complete"
 auto_completion_tab_key_behavior = "smart"
-
-[[layers]]
-name = "shell"
-default_position = "bottom"
 
 [[layers]]
 name = "colorscheme"

@@ -68,13 +68,16 @@ name = "core#statusline"
 name = "incsearch"
 
 [[layers]]
-name = "gtags"
-gtagslabel = "pygments"
-
-[[layers]]
 name = "lang#c"
 enable_clang_syntax_highlight = true
 
 [[layers]]
 name = "lang#latex"
 
+[[custom_plugins]]
+repo = "xolox/vim-easytags" 
+merged = false
+
+[[custom_plugins]]
+repo = "xolox/vim-misc"
+merged = false

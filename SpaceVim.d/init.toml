@@ -42,7 +42,7 @@
 
     bootstrap_before = "myspacevim#before"
 
-    project_rooter_patterns = []
+    project_rooter_automatically = false
 
 
 # Enable autocomplete layer

@@ -74,6 +74,11 @@ enable_clang_syntax_highlight = true
 [[layers]]
 name = "lang#latex"
 
+[[layers]]
+name = "lang#rust"
+recommender_style = true
+format_on_save = true
+
 [[custom_plugins]]
 repo = "xolox/vim-easytags" 
 merged = false

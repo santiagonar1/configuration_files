@@ -94,9 +94,6 @@ source $ZSH/oh-my-zsh.sh
 # Export HOSTNAME variable (compatibility with bash)
 export HOSTNAME=$(hostname)
 
-# Use some work functions
-source $HOME/.bash_functions_work
-
 # Do an ls after cp
 function cd {
         builtin cd "$@" && ls
@@ -147,6 +144,7 @@ bindkey -v
 # source /etc/profile.d/vte.sh
 
 # Env. variables
+export PATH=~/.scripts:$PATH
 export LIKWID_LIB=/usr/local/lib
 export LIKWID_INCLUDE=/usr/local/include
 export PYTHONPATH=/home/santiago/git/power_measurements/scripts/C:$PYTHONPATH

@@ -116,14 +116,6 @@ alias gs="git status"
 alias gl="git log"
 alias go="git checkout"
 alias gd="git diff"
-# Move commands
-alias cdg="cd $HOME/git"
-alias cdd="cd $HOME/Downloads"
-alias cdm="cd $HOME/Documents/Maestria"
-alias cdt="cd $HOME/Documents/Maestria/Thesis"
-alias cdp="cd $HOME/git/power_measurements"
-alias cdc="cd $HOME/git/configuration_files"
-alias cdgc="cd $HOME/git/compiler"
 # Cluster MPI
 alias cluster="/home/santiago/git/hiwi_scripts/vmc-old/irm4"
 

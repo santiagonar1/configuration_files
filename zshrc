@@ -107,7 +107,7 @@ function comp {
 
 # Autostart tmux with every terminal
 # if command -v tmux &> /dev/null && [ -n "$PS1"  ] && [[ ! "$TERM" =~ screen  ]]\
-#    && [[ ! "$TERM" =~ tmux  ]] && [ -z "$TMUX"  ]; then
+#    && [[ ! "$TERM" =~ tmux  ]] && [ -z "$TMUX"  ] && [ ! -n "$SSH_CLIENT" ]; then
 #     exec tmux
 # fi
 
@@ -144,20 +144,36 @@ bindkey -v
 # source /etc/profile.d/vte.sh
 
 # Env. variables
+export PATH=~/.scripts:$PATH
 export LIKWID_LIB=/usr/local/lib
 export LIKWID_INCLUDE=/usr/local/include
-# export PYTHONPATH=/home/santiago/git/power_measurements/scripts/C:$PYTHONPATH
+export GTAGSLABEL=pygments
+
+CONDA_PATH=
+# Select options for laptop and work
+if [[ $(hostname) == *"atsccs"* ]]; then
+  CONDA_PATH=$HOME/.anaconda3
+  export PATH=/home/ga85pun/git/Programs/aspectc++:$PATH
+  export PATH=/home/ga85pun/git/Programs/cmake-3.16.4-Linux-x86_64/bin:$PATH
+
+  # Build irtss
+  export IRTSS_PATH=/home/ga85pun/git/irtss
+  alias birtss="$IRTSS_PATH/tools/bin/build4platform.pl $IRTSS_PATH/platform/release.x86guest.generic-debug.pm"
+else
+  CONDA_PATH=$HOME/.miniconda3
+fi
+
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/home/santiago/.anaconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+__conda_setup="$($CONDA_PATH'/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
 if [ $? -eq 0 ]; then
     eval "$__conda_setup"
 else
-    if [ -f "/home/santiago/.anaconda3/etc/profile.d/conda.sh" ]; then
-        . "/home/santiago/.anaconda3/etc/profile.d/conda.sh"
+    if [ -f "$CONDA_PATH/etc/profile.d/conda.sh" ]; then
+        . "$CONDA_PATH/etc/profile.d/conda.sh"
     else
-        export PATH="/home/santiago/.anaconda3/bin:$PATH"
+        export PATH="$CONDA_PATH/bin:$PATH"
     fi
 fi
 unset __conda_setup

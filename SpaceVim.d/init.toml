@@ -1,0 +1,88 @@
+#=============================================================================
+# basic.toml --- basic configuration example for SpaceVim
+# Copyright (c) 2016-2020 Wang Shidong & Contributors
+# Author: Wang Shidong < wsdjeg at 163.com >
+# URL: https://spacevim.org
+# License: GPLv3
+#=============================================================================
+
+# All SpaceVim option below [option] section
+[options]
+    # set spacevim theme. by default colorscheme layer is not loaded,
+    # if you want to use more colorscheme, please load the colorscheme
+    # layer
+    colorscheme = "gruvbox"
+    colorscheme_bg = "dark"
+    # Disable guicolors in basic mode, many terminal do not support 24bit
+    # true colors
+    enable_guicolors = false
+    # Disable statusline separator, if you want to use other value, please
+    # install nerd fonts
+    statusline_separator = "arrow"
+    statusline_iseparator = "bar"
+    buffer_index_type = 4
+    windows_index_type = 3
+    enable_tabline_filetype_icon = false
+    enable_statusline_mode = false
+    statusline_unicode_symbols = true
+
+    # Enable vim compatible mode, avoid changing origin vim key bindings
+    vimcompatible = true
+
+    snippet_engine = "ultisnips"
+
+    filemanager = "nerdtree"
+    filetree_direction = "left"
+
+    expand_tab = true
+
+    enable_ycm = true
+
+    disabled_plugins = ["neomake"]
+
+    bootstrap_before = "myspacevim#before"
+
+    project_rooter_automatically = false
+
+
+# Enable autocomplete layer
+[[layers]]
+name = "autocomplete"
+autocomplete_method = "ycm"
+auto_completion_return_key_behavior = "complete"
+auto_completion_tab_key_behavior = "smart"
+
+[[layers]]
+name = "colorscheme"
+
+[[layers]]
+name = "VersionControl"
+
+[[layers]]
+name = "git"
+
+[[layers]]
+name = "core#statusline"
+
+[[layers]]
+name = "incsearch"
+
+[[layers]]
+name = "lang#c"
+enable_clang_syntax_highlight = true
+
+[[layers]]
+name = "lang#latex"
+
+[[layers]]
+name = "lang#rust"
+recommender_style = true
+format_on_save = true
+
+[[custom_plugins]]
+repo = "xolox/vim-easytags" 
+merged = false
+
+[[custom_plugins]]
+repo = "xolox/vim-misc"
+merged = false

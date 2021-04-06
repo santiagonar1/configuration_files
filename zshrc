@@ -141,7 +141,7 @@ if [[ $(hostname) == *"atsccs"* ]]; then
   export PATH=/home/ga85pun/git/Programs/cmake-3.16.4-Linux-x86_64/bin:$PATH
 
   # Build irtss
-  export IRTSS_PATH=/home/ga85pun/git/irtss
+  export IRTSS_PATH=/work_fast/santiago/git/irtss
   alias birtss="$IRTSS_PATH/tools/bin/build4platform.pl $IRTSS_PATH/platform/release.x86guest.generic-debug.pm"
 else
   CONDA_PATH=$HOME/.miniconda3

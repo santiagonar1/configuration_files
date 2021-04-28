@@ -145,6 +145,7 @@ if [[ $(hostname) == *"atsccs"* ]]; then
   alias birtss="$IRTSS_PATH/tools/bin/build4platform.pl $IRTSS_PATH/platform/release.x86guest.generic-debug.pm"
 else
   export PATH=/home/santiago/.Programs/aspectc++:$PATH
+  export IRTSS_PATH=/home/santiago/git/irtss
   CONDA_PATH=$HOME/.miniconda3
 fi
 

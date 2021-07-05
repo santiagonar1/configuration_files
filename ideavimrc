@@ -1,0 +1,32 @@
+let mapleader=" "
+
+" ---------------
+" Plugins
+" ---------------
+set NERDTree
+set commentary
+set easymotion
+
+" ---------------
+" UI
+" ---------------
+set relativenumber number
+set ruler
+
+" ---------------
+" Shortcut
+" ---------------
+nmap <Space>ft :NERDTreeToggle<CR>
+nmap <Space>cl gc
+
+nmap <Space>; :sh<CR>
+
+nmap <Space>ff :action GotoFile<CR>
+nmap <Space>fc :action GotoClass<CR>
+nmap <Space>fs :action GotoSymbol<CR>
+nmap <Space>wx :action MoveEditorToOppositeTabGroup<CR>
+nmap <Space>wl :action NextSplitter<CR>
+nmap <Space>wj :action NextSplitter<CR>
+nmap <Space>wh :action PrevSplitter<CR>
+nmap <Space>wk :action PrevSplitter<CR>
+nmap <Space>d :action GotoImplementation<CR>:

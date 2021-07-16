@@ -79,6 +79,15 @@ name = "lang#rust"
 recommender_style = true
 format_on_save = true
 
+[[layers]]
+  name = "lsp"
+  filetypes = [
+    "rust"
+  ]
+  [layers.override_cmd]
+    rust = ["rls"]
+
+
 [[custom_plugins]]
 repo = "xolox/vim-easytags" 
 merged = false

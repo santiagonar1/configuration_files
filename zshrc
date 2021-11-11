@@ -55,6 +55,9 @@ plugins=(
     zsh-autosuggestions
     vi-mode
     zsh-syntax-highlighting
+    colored-man-pages
+    zsh-navigation-tools
+    common-aliases
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -140,6 +143,11 @@ if [[ $(hostname) == *"atsccs"* ]]; then
   CONDA_PATH=$HOME/.anaconda3
   export PATH=/home/ga85pun/git/Programs/aspectc++:$PATH
   export PATH=/home/ga85pun/git/Programs/cmake-3.16.4-Linux-x86_64/bin:$PATH
+
+  # TeX Live
+  export PATH=/work/ga85pun/texlive/2021/bin/x86_64-linux:$PATH
+  export MANPATH=/work/ga85pun/texlive/2021/texmf-dist/doc/man:$MANPATH
+  export INFOPATH=/work/ga85pun/texlive/2021/texmf-dist/doc/info:$INFOPATH
 
   # Build irtss
   export IRTSS_PATH=/work_fast/santiago/git/irtss

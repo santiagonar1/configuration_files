@@ -57,7 +57,6 @@ plugins=(
     zsh-syntax-highlighting
     colored-man-pages
     zsh-navigation-tools
-    common-aliases
 )
 
 source $ZSH/oh-my-zsh.sh

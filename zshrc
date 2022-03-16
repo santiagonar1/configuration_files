@@ -141,7 +141,7 @@ CONDA_PATH=
 if [[ $(hostname) == *"atsccs"* ]]; then
   CONDA_PATH=$HOME/.anaconda3
   export PATH=/home/ga85pun/git/Programs/aspectc++:$PATH
-  export PATH=/home/ga85pun/git/Programs/cmake-3.16.4-Linux-x86_64/bin:$PATH
+  export PATH=/home/ga85pun/git/Programs/cmake-3.22.3-linux-x86_64/bin:$PATH
 
   # TeX Live
   export PATH=/work/ga85pun/texlive/2021/bin/x86_64-linux:$PATH

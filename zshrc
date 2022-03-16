@@ -149,7 +149,7 @@ if [[ $(hostname) == *"atsccs"* ]]; then
   export INFOPATH=/work/ga85pun/texlive/2021/texmf-dist/doc/info:$INFOPATH
 
   # Build irtss
-  export IRTSS_PATH=/work_fast/santiago/git/irtss
+  export IRTSS_PATH=/work_fast/ga85pun/git/irtss
 else
   export PATH=/home/santiago/.Programs/aspectc++:$PATH
   export IRTSS_PATH=/home/santiago/git/irtss

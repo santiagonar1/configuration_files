@@ -135,6 +135,10 @@ export PATH=~/.scripts:$PATH
 export LIKWID_LIB=/usr/local/lib
 export LIKWID_INCLUDE=/usr/local/include
 export GTAGSLABEL=pygments
+# Used to avoid `libGL error: failed to load driver: iris` error. Taken
+# from here:
+# https://github.com/conda-forge/ctng-compilers-feedstock/issues/95#issuecomment-1118764776
+export LD_PRELOAD=/usr/lib/x86_64-linux-gnu/libstdc++.so.6
 
 CONDA_PATH=
 # Select options for laptop and work

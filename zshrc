@@ -121,6 +121,9 @@ alias go="git checkout"
 alias gd="git diff"
 # Cluster MPI
 alias cluster="/home/santiago/git/hiwi_scripts/vmc-old/irm4"
+# Cling-tidy fix for ZSH. See: 
+# https://stackoverflow.com/questions/62266965/clang-tidy-resolving-no-match-error-when-adding-arguments
+alias clang-tidy='noglob clang-tidy'
 
 # Use VIM mode
 bindkey -v

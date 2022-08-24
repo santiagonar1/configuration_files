@@ -111,7 +111,7 @@ function comp {
 # Alias to youtube-dl (to best audio, use --audio-quality 0)
 alias youtube="youtube-dl --extract-audio --audio-format mp3"
 # Alias git commands
-alias gp="git pull --prune"
+alias gp="git pull --prune --recurse-submodules"
 alias gc="git commit"
 alias ga="git add"
 alias gb="git branch"

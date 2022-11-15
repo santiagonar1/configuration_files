@@ -117,7 +117,7 @@ alias ga="git add"
 alias gb="git branch"
 alias gs="git status"
 alias gl="git log"
-alias go="git checkout"
+alias goc="git checkout"
 alias gd="git diff"
 # Cluster MPI
 alias cluster="/home/santiago/git/hiwi_scripts/vmc-old/irm4"
@@ -138,6 +138,7 @@ export PATH=~/.scripts:$PATH
 export LIKWID_LIB=/usr/local/lib
 export LIKWID_INCLUDE=/usr/local/include
 export GTAGSLABEL=pygments
+export PATH=$PATH:/usr/local/go/bin
 # Used to avoid `libGL error: failed to load driver: iris` error. Taken
 # from here:
 # https://github.com/conda-forge/ctng-compilers-feedstock/issues/95#issuecomment-1118764776

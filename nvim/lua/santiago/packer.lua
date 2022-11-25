@@ -64,4 +64,11 @@ return require("packer").startup(function(use)
 	use({ "nvim-treesitter/nvim-treesitter" })
 	-- Formatting
 	use("jose-elias-alvarez/null-ls.nvim")
+
+	use({
+		"nmac427/guess-indent.nvim",
+		config = function()
+			require("guess-indent").setup({})
+		end,
+	})
 end)

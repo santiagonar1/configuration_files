@@ -18,6 +18,8 @@ nnoremap("<leader>wl", "<C-w>l")
 nnoremap("<leader>wh", "<C-w>h")
 nnoremap("<leader>wk", "<C-w>k")
 nnoremap("<leader>wj", "<C-w>j")
+-- Swap position with windwon N (default: next window)
+nnoremap("<leader>wx", "<C-w>x")
 
 -- LSP
 nnoremap("gd", "<Cmd>lua vim.lsp.buf.definition()<CR>")

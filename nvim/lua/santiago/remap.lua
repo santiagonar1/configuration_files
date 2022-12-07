@@ -33,3 +33,6 @@ nnoremap("<leader>dk", "<cmd>lua vim.diagnostic.goto_prev()<CR>")
 
 -- Format code
 nnoremap("<C-I>", "<Cmd>lua vim.lsp.buf.format()<CR>")
+
+-- Diagnostics
+nnoremap("<leader>dt", "<Cmd>TroubleToggle document_diagnostics<cr>")

@@ -28,6 +28,8 @@ nnoremap("gt", "<Cmd>lua vim.lsp.buf.type_definition()<CR>")
 nnoremap("gi", "<Cmd>lua vim.lsp.buf.implementation()<CR>")
 nnoremap("gf", "<Cmd>lua vim.lsp.buf.references()<CR>")
 nnoremap("<leader>rn", "<cmd>lua vim.lsp.buf.rename()<CR>")
+nnoremap("<leader>dj", "<cmd>lua vim.diagnostic.goto_next()<CR>")
+nnoremap("<leader>dk", "<cmd>lua vim.diagnostic.goto_prev()<CR>")
 
 -- Format code
 nnoremap("<C-I>", "<Cmd>lua vim.lsp.buf.format()<CR>")
